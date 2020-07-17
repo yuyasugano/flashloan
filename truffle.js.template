@@ -1,0 +1,35 @@
+var HDWalletProvider = require("truffle-hdwallet-provider");
+var mnemonic = "<your wallet mnemonic>";
+var ropsten = "https://ropsten.infura.io/v3/yourropstenprovider";
+var mainnet = "https://mainnet.infura.io/v3/yourmainnetprovider";
+
+module.exports = {
+  networks: {
+    ropsten: {
+      provider: function() {
+        return new HDWalletProvider(
+          mnemonic,
+          ropsten,
+          <Index of your wallet>
+        );
+      },
+      network_id: 3,
+      gas: 470000,
+      from: "<your account address>"
+    },
+    mainnet: {
+      provider: function() {
+        return new HDWalletProvider(
+          mnemonic,
+          mainnet,
+          <Index of your wallet>
+        );
+      },
+      network_id: 1,
+      gas: 470000,
+      gasPrice: 20000000,
+      from: "<your account address>"
+    }
+  }
+}
+

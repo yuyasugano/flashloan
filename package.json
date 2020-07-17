@@ -1,0 +1,17 @@
+{
+  "name": "flashloan",
+  "version": "1.0.0",
+  "description": "This example show how to execute a flashloan loan with orfeed in aave protocol.",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
