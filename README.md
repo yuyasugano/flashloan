@@ -30,4 +30,4 @@ orfeed.arb(address(this), address(this), ["DAI","WETH","DAI"], _amount, ["UNISWA
  
 ## License
 
-This library is licensed under the Apache 2.0 License.
+This code is licensed under the MIT License.
